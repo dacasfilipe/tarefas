@@ -55,7 +55,7 @@ function displayInfo({firstName,age}){
     console.log(`${firstName} tem ${age} anos.`);
 }
 const pessoaInfo = {
-    firstName:'Maria',
+    firstName: ,
     lastName:'Fernandes',
     age:25
 }
@@ -78,7 +78,7 @@ function displayInfo({firstName,age}){
 async function fetchData(){
     try{
         let response = 
-        await fetch('https://sc.senai.br/alunos/1');
+        await fetch('localhost:3000/alunos/all',aluno);
         let data = await response.json();
         console.log(data);
     }catch(error){
@@ -104,3 +104,5 @@ const numero2 = 5;
 const soma = (a, b) => a + b;
 console.log(soma(numero1,numero2));
 console.log(soma(2,5));
+
+//3.Dado o array [3,5,7]
